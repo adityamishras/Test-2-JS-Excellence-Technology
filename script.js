@@ -142,3 +142,7 @@ Question 13 - Create a Dark Mode Toggle Button.
 When clicked: 
 • Switch between dark theme and light theme by toggling a class.
 */
+let mode = document.querySelector(".mode");
+mode.addEventListener("click", () => {
+ body.classlist.toggle("active")
+})
