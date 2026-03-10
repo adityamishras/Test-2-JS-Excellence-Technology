@@ -1,8 +1,8 @@
 // 2. Print all no between 1 to 50 using loop
 for (let i = 0; i <= 50; i++) {
- if (i % 2 != 0) {
-  console.log(i);
- }
+  if (i % 2 != 0) {
+    console.log(i);
+  }
 }
 
 // 3. write js to find largeat no in an array
@@ -11,9 +11,9 @@ let largest = 0;
 let arr = [10, 20, 30, 40, 10, 100];
 
 for (let i = 0; i <= arr.length; i++) {
- if (arr[i] > largest) {
-  largest = arr[i];
- }
+  if (arr[i] > largest) {
+    largest = arr[i];
+  }
 }
 console.log("Larget Number  - " + largest);
 
@@ -22,8 +22,8 @@ console.log("Larget Number  - " + largest);
 let array = [1, 2, 3];
 let count = 0;
 for (let item of array) {
- count += item;
- console.log(count);
+  count += item;
+  console.log(count);
 }
 
 /*
@@ -35,8 +35,8 @@ let sen = "Hello This is Aditya, Good Morning."
 let vovels = "aeiouAEIOU"
 count = 0;
 for (let char of sen) {
- if (vovels.includes(char))
-  count++;
+  if (vovels.includes(char))
+    count++;
 }
 console.log(count)
 
@@ -75,9 +75,9 @@ let greater = nums.map(n => n > 10)  /* ignore */
 console.log(greater)  /* ignore */
 let arry = [];
 for (let item of nums) {
- if (item > 10) {
-  arry.push(item)
- }
+  if (item > 10) {
+    arry.push(item)
+  }
 }
 console.log(arry)
 /*
@@ -87,29 +87,29 @@ b) Create four buttons in HTML: Add , Subtract , Multiply, Divide
 */
 
 function add(a, b) {
- console.log(a + b)
- let p = document.createElement("p");
- document.body.append(p)
- p.innerText = a + b
+  console.log(a + b)
+  let p = document.createElement("p");
+  document.body.append(p)
+  p.innerText = a + b
 
 }
 function subtract(a, b) {
- console.log(a - b)
- let p = document.createElement("p");
- document.body.append(p)
- p.innerText = a - b
+  console.log(a - b)
+  let p = document.createElement("p");
+  document.body.append(p)
+  p.innerText = a - b
 }
 function multiply(a, b) {
- console.log(a * b)
- let p = document.createElement("p");
- document.body.append(p)
- p.innerText = a * b
+  console.log(a * b)
+  let p = document.createElement("p");
+  document.body.append(p)
+  p.innerText = a * b
 }
 function divide(a, b) {
- console.log(a / b)
- let p = document.createElement("p");
- document.body.append(p)
- p.innerText = a / b
+  console.log(a / b)
+  let p = document.createElement("p");
+  document.body.append(p)
+  p.innerText = a / b
 }
 
 /*
@@ -134,7 +134,7 @@ let btn = document.createElement("button");
 btn.innerText = "Alert Button"
 document.body.append(btn);
 btn.addEventListener("click", () => {
- alert("Button is Clickded!")
+  alert("Button is Clickded!")
 })
 
 /*
@@ -144,5 +144,5 @@ When clicked:
 */
 let mode = document.querySelector(".mode");
 mode.addEventListener("click", () => {
- body.classlist.toggle("active")
+  document.body.classList.toggle("active")
 })
